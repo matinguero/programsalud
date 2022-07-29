@@ -1,0 +1,18 @@
+Pagina de inicio
+	 pagina de logueo
+	 pagina de registro
+		pagina de inicio clientes
+			mis datos
+				"nombre ape,DNI, mail, telefono, direccion;"
+			mis turnos
+				"agregar 3 o 4 opciones con fechas prefijadas, horarios que digas 2 o 3 especialidades distintas"
+					Cerrar sesion
+
+EJEMPLO:
+
+Turnos asignados
+	oftamologo 1/10/22 15:00
+	
+turnos disponibles:
+	1 fecha 2/2 cardiologo tachito
+	2 fecha 4/8 neurologo
