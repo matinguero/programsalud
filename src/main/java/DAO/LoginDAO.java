@@ -20,7 +20,7 @@ public class LoginDAO {
 
 			String sql = new String();
 
-			sql = "SELECT * from usuario where dni=" + dni + " and " + "password='" + contrasenia + "';";
+			sql = "SELECT * from usuario where dni=" + dni + " and password='" + contrasenia + "';";
 
 			ResultSet resultSet = statement.executeQuery(sql);
 			if (resultSet.next()) {
