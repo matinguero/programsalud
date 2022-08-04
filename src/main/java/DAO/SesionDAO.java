@@ -6,11 +6,9 @@ import java.sql.SQLException;
 import java.sql.Statement;
 
 import conexiones.ConexionDB;
+import model.Usuario;
 
-
-
-
-public class LoginDAO {
+public class SesionDAO { 
 
 	public Boolean Login(Integer dni, String contrasenia) {
 
@@ -22,7 +20,7 @@ public class LoginDAO {
 
 			String sql = new String();
 
-			sql = "SELECT * from usuario where dni=" + dni + " and " + "password='" + contrasenia + "';";
+			sql = "SELECT * from usuario where dni=" + dni + ";";
 
 			ResultSet resultSet = statement.executeQuery(sql);
 			if (resultSet.next()) {
@@ -38,5 +36,4 @@ public class LoginDAO {
 		}
 
 	}
-	
 }

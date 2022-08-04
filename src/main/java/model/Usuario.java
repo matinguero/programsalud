@@ -30,7 +30,6 @@ public class Usuario {
 		super();
 		this.nombre = nombre;
 		this.contrasenia = contrasenia;
-
 	}
 
 	public Integer getId() {
