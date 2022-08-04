@@ -19,23 +19,15 @@
 		List<Usuario> resultado = prueba.accederUsuario(dniparse);
 	
         	
-		for (int i=0;i<resultado.size();i++)
-		{
-			out.println("<tr>");
-			out.println("<td>" + resultado.get(i).getNombre() + "</td>");
-			out.println("<td>" + resultado.get(i).getApellido() + "</td>");
-			out.println("<td>" + resultado.get(i).getDni() + "</td>");
-			out.println("<td>" + resultado.get(i).getTelefono() + "</td>");
-			out.println("<td>" + resultado.get(i).getMail() + "</td>");
-			out.println("<td>" + resultado.get(i).getDireccion() + "</td>");
-			out.println("<td>" + resultado.get(i).getEdad() + "</td>");
-			out.println("<td>" + resultado.get(i).getContrasenia()+ "</td>");
-			out.println("</tr>");
-		}
+		
 		
 		//out.print("<nav class='fondo-claro'>Nombre:"+ resultado.get(0).getNombre()+"</nav>");
 		%>
-		<h1 class="fondo-claro">hola<%resultado.getNombre();%></h1>
+		<h1 class="fondo-claro"><%for (int i=0;i<resultado.size();i++)
+		{
+			out.println(resultado.get(i).getNombre());
+			
+		}%></h1>
 
 </body>
 </html>
